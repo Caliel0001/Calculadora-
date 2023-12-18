@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="output">
+      <p id="history"></p>
+      <p id="display">0</p>
+    </div>
+    <div class="keys">
+      <button onclick="addToHistory('7')" class="auto-width">7</button>
+      <button onclick="addToHistory('8')" class="auto-width">8</button>
+      <button onclick="addToHistory('9')" class="auto-width">9</button>
+      <button onclick="addToHistory('/')">÷</button>
+      <button onclick="addToHistory('4')" class="auto-width">4</button>
+      <button onclick="addToHistory('5')" class="auto-width">5</button>
+      <button onclick="addToHistory('6')" class="auto-width">6</button>
+      <button onclick="addToHistory('*')">x</button>
+      <button onclick="addToHistory('1')" class="auto-width">1</button>
+      <button onclick="addToHistory('2')" class="auto-width">2</button>
+      <button onclick="addToHistory('3')" class="auto-width">3</button>
+      <button onclick="addToHistory('-')">-</button>
+      <button onclick="addToHistory('0')" class="auto-width">0</button>
+      <button onclick="addToHistory('.')">.</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="backspace()" class="auto-width">
+  <img src="backspace-icon.png" alt="Backspace Icon">
+</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="addToHistory('+')">+</button>
+      <button onclick="clearHistory()" class="auto-width">
+  <img src="lixo.png" alt="Ícone de Lixo">
+</button>
+       <button onclick="addToHistory('%')">%</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
